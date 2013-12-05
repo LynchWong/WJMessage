@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="s6z-pm-2zB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - 登录-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="LoginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="GwV-zL-k6y">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundClick:" destination="2" eventType="touchUpInside" id="MC0-Is-gWr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入C8云用户名" minimumFontSize="17" id="UCX-S0-US0">
+                                <rect key="frame" x="40" y="125" width="240" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="2" eventType="editingDidEndOnExit" id="LmP-Xw-jfo"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入C8云密码" clearsOnBeginEditing="YES" minimumFontSize="17" id="iSi-5F-9Z7">
+                                <rect key="frame" x="40" y="177" width="240" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="2" eventType="editingDidEndOnExit" id="4hM-Gd-wfZ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dow-cq-OhO">
+                                <rect key="frame" x="92" y="245" width="136" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="登录" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="vOp-GG-cHX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="记住密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cg5-YI-4Em">
+                                <rect key="frame" x="73" y="216" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="自动登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZvY-ac-P3o">
+                                <rect key="frame" x="207" y="216" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="wj.png" id="1kx-w4-Jz9">
+                                <rect key="frame" x="48" y="18" width="224" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="copyright.png" id="1My-7o-Z7Z">
+                                <rect key="frame" x="80" y="309" width="160" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="um4-HX-ZqR"/>
+                    <connections>
+                        <outlet property="autoLogin" destination="ZvY-ac-P3o" id="IqH-5h-srf"/>
+                        <outlet property="backButton" destination="GwV-zL-k6y" id="p1N-8m-7Nl"/>
+                        <outlet property="loginButton" destination="dow-cq-OhO" id="smk-aK-qEs"/>
+                        <outlet property="loginImage" destination="1kx-w4-Jz9" id="RGe-ah-txK"/>
+                        <outlet property="nameTextField" destination="UCX-S0-US0" id="YSl-bA-MnM"/>
+                        <outlet property="passwordTextField" destination="iSi-5F-9Z7" id="L1K-92-2iF"/>
+                        <outlet property="remberPassword" destination="Cg5-YI-4Em" id="dIz-VN-MtT"/>
+                        <segue destination="p25-Cb-IaS" kind="push" identifier="regist" id="Vdi-ZS-b74"/>
+                        <segue destination="kQL-ZF-079" kind="push" identifier="enterprisecenter" id="5E2-YU-XNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="-980"/>
+        </scene>
+        <!--Pick Company View Controller - 选择企业-->
+        <scene sceneID="HlA-I6-QU3">
+            <objects>
+                <viewController id="VyS-wf-xug" customClass="PickCompanyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dt4-np-MId">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" id="cHk-G9-qUf">
+                                <rect key="frame" x="0.0" y="31" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VyS-wf-xug" id="m8b-Y3-fCZ"/>
+                                    <outlet property="delegate" destination="VyS-wf-xug" id="dsw-f4-yyQ"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qZx-Pv-e5m">
+                                <rect key="frame" x="105" y="269" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="查看" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="VyS-wf-xug" eventType="touchUpInside" id="TCJ-76-wDA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="shunovaimage.png" id="ZEk-Dh-Z9A">
+                                <rect key="frame" x="115" y="319" width="112" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="选择企业" id="3QK-84-pf1"/>
+                    <connections>
+                        <outlet property="selectButton" destination="qZx-Pv-e5m" id="ZjP-QJ-B81"/>
+                        <outlet property="selectPicker" destination="cHk-G9-qUf" id="LPh-iV-w54"/>
+                        <segue destination="OwW-9H-lNX" kind="push" identifier="pickpricelist" id="vC0-yQ-SiV"/>
+                        <segue destination="ngA-pk-aTe" kind="push" identifier="picktotallist" id="aut-az-bng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnt-Z6-oDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="-1974"/>
+        </scene>
+        <!--Edit View Controller - 编辑企业信息-->
+        <scene sceneID="7Dc-Oo-Ahe">
+            <objects>
+                <viewController storyboardIdentifier="EditView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vVU-Ue-SUh" customClass="EditViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JWp-dw-drE">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="esS-mA-McY">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundClick:" destination="vVU-Ue-SUh" eventType="touchUpInside" id="pJ7-dQ-wLC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2f7-Mk-kpF">
+                                <rect key="frame" x="59" y="247" width="192" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="vVU-Ue-SUh" eventType="editingDidEndOnExit" id="4sH-d4-Bkw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tk7-so-f9V">
+                                <rect key="frame" x="187" y="41" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="更新" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vVU-Ue-SUh" eventType="touchUpInside" id="tzv-OP-G9k"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="enumber.png" id="rXM-HJ-he8">
+                                <rect key="frame" x="20" y="195" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ename.png" id="Kxb-zG-FWW">
+                                <rect key="frame" x="20" y="248" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon.png" id="A2M-KR-fhS">
+                                <rect key="frame" x="21" y="18" width="132" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qMi-GM-pFq">
+                                <rect key="frame" x="59" y="199" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="编辑企业信息" id="14x-2X-cwH"/>
+                    <connections>
+                        <outlet property="backButton" destination="esS-mA-McY" id="ayX-N2-Re1"/>
+                        <outlet property="enterpriseName" destination="2f7-Mk-kpF" id="21L-wp-Tf8"/>
+                        <outlet property="enterpriseNumber" destination="qMi-GM-pFq" id="ORq-x8-z9x"/>
+                        <outlet property="nameImage" destination="Kxb-zG-FWW" id="PUQ-Rg-d2z"/>
+                        <outlet property="numberImage" destination="rXM-HJ-he8" id="K5g-es-3Jf"/>
+                        <outlet property="updateButton" destination="tk7-so-f9V" id="UnV-NM-Y0y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWa-Pp-pvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="80"/>
+        </scene>
+        <!--Auth Code View Controller - 添加令牌-->
+        <scene sceneID="nKv-1Q-pWW">
+            <objects>
+                <viewController storyboardIdentifier="AuthView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YCm-M0-V3a" customClass="AuthCodeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ifr-eM-PRq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="n1I-DF-3uD">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundClick:" destination="YCm-M0-V3a" eventType="touchUpInside" id="GdR-RC-E76"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入授权码" minimumFontSize="17" id="qoj-lm-4xb">
+                                <rect key="frame" x="80" y="140" width="160" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="YCm-M0-V3a" eventType="editingDidEndOnExit" id="yDM-9f-0Wc"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CSb-SS-8d7">
+                                <rect key="frame" x="108" y="206" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="确定" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YCm-M0-V3a" eventType="touchUpInside" id="8uc-Yv-7yE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加令牌" id="Mbs-mC-DTF"/>
+                    <connections>
+                        <outlet property="authcodeTextField" destination="qoj-lm-4xb" id="Fev-8O-MRb"/>
+                        <outlet property="backButton" destination="n1I-DF-3uD" id="RFO-EG-PnI"/>
+                        <outlet property="sureButton" destination="CSb-SS-8d7" id="iWS-gj-4Fz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbU-gX-K3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3529" y="-1974"/>
+        </scene>
+        <!--History View Controller - 历史报价-->
+        <scene sceneID="yES-lJ-J3g">
+            <objects>
+                <tableViewController storyboardIdentifier="HistoryView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dqx-yx-KtD" customClass="HistoryViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="byp-Bw-Kis">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryListTableIdentifier" id="YRi-Ys-MeB">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dqx-yx-KtD" id="qOy-54-zIr"/>
+                            <outlet property="delegate" destination="dqx-yx-KtD" id="mXE-hE-15K"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="历史报价" id="QUc-gE-6LY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfM-Bx-dAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5079" y="-1974"/>
+        </scene>
+        <!--Guide View Controller-->
+        <scene sceneID="hZ6-UY-T2l">
+            <objects>
+                <viewController storyboardIdentifier="GuideView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Gw-hb-Smp" customClass="GuideViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gB0-hR-DCT">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yF-Z9-NpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="-466"/>
+        </scene>
+        <!--Navigation Controller - 设置-->
+        <scene sceneID="Ptv-pE-b8L">
+            <objects>
+                <navigationController storyboardIdentifier="SecondNavigation" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W3V-Nx-Sbx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="设置" image="gear_24.png" id="mus-g8-ryX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FAx-pe-ax3">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fgh-Nf-yfQ" kind="relationship" relationship="rootViewController" id="pS4-I0-7q7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sob-tD-e4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467" y="-669"/>
+        </scene>
+        <!--Setting View Controller - 设置-->
+        <scene sceneID="04s-zk-mSH">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fgh-Nf-yfQ" customClass="SettingViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="nSJ-h0-xd3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingTableIdentifier" id="hSu-9A-HkE">
+                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fgh-Nf-yfQ" id="Ckh-H4-LCO"/>
+                            <outlet property="delegate" destination="Fgh-Nf-yfQ" id="VYZ-7j-9Zk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="设置" id="2X0-vc-a8p"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="settinglogin" id="lOy-ab-Nm0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ykq-Sc-2Xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="-669"/>
+        </scene>
+        <!--Person Info View Controller-->
+        <scene sceneID="9Fh-2b-KdO">
+            <objects>
+                <viewController storyboardIdentifier="PersonView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3hT-D0-ZGC" customClass="PersonInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxe-dQ-etv">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-568h@2x.png" id="Sf5-CT-i5S">
+                                <rect key="frame" x="0.0" y="-19" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Dt-zj-RfV">
+                                <rect key="frame" x="187" y="41" width="105" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="修改密码" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertAction:" destination="3hT-D0-ZGC" eventType="touchUpInside" id="eo4-Xe-rbd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon.png" id="RCQ-lh-Q1g">
+                                <rect key="frame" x="21" y="18" width="132" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X9k-a4-llj">
+                                <rect key="frame" x="77" y="199" width="192" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="用户名：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yCn-Q5-jAH">
+                                <rect key="frame" x="9" y="204" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pA8-7r-MDv"/>
+                    <connections>
+                        <outlet property="backImage" destination="Sf5-CT-i5S" id="doI-Bv-C3S"/>
+                        <outlet property="changePassWordButton" destination="2Dt-zj-RfV" id="zqG-8E-hHm"/>
+                        <outlet property="loginUserName" destination="X9k-a4-llj" id="r5k-Ea-Q4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNE-1G-zbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="80"/>
+        </scene>
+        <!--Good View Controller - 商品信息-->
+        <scene sceneID="5IO-lR-bk5">
+            <objects>
+                <viewController id="dhZ-Si-fLH" customClass="GoodViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qv2-oQ-qxm">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-568h@2x.png" id="ziw-Up-JCX">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VGE-bu-Pww">
+                                <rect key="frame" x="10" y="179" width="300" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ar-i9-Gjc">
+                                <rect key="frame" x="69" y="219" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="p.png" id="xOP-Be-4aI">
+                                <rect key="frame" x="10" y="217" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="商品信息" id="nn0-rE-am0"/>
+                    <connections>
+                        <outlet property="backImage" destination="ziw-Up-JCX" id="MjE-bK-0CJ"/>
+                        <outlet property="labelGoodName" destination="VGE-bu-Pww" id="1OK-Ni-FVY"/>
+                        <outlet property="labelGoodPrice" destination="1ar-i9-Gjc" id="1LL-r3-PQG"/>
+                        <outlet property="priceImage" destination="xOP-Be-4aI" id="Hhu-9w-Nn9"/>
+                        <segue destination="AJg-lJ-iKX" kind="push" identifier="goodimage" id="drg-lL-3ik"/>
+                        <segue destination="Gd3-AJ-csD" kind="push" identifier="historygraph" id="ZOn-ca-6dG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ka-C2-IPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4558" y="-1324"/>
+        </scene>
+        <!--Good Image View Controller-->
+        <scene sceneID="neF-4A-Cj7">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="AJg-lJ-iKX" customClass="GoodImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXj-5h-xkE">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="id0-yx-OGg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWR-OE-2Ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5079" y="-1324"/>
+        </scene>
+        <!--History Graph View Controller-->
+        <scene sceneID="HfB-7F-aPk">
+            <objects>
+                <viewController id="Gd3-AJ-csD" customClass="HistoryGraphViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2cL-fo-z6k">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sPN-TL-7hr"/>
+                    <connections>
+                        <segue destination="dqx-yx-KtD" kind="push" identifier="listhistory" id="aNb-LO-D7V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hj-u9-BVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4558" y="-1974"/>
+        </scene>
+        <!--First View Controller - 企业在线-->
+        <scene sceneID="eyZ-L4-JPy">
+            <objects>
+                <viewController storyboardIdentifier="FirstView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QvU-bs-0UK" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DmX-nh-MiQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="daX-at-Bvt">
+                                <rect key="frame" x="0.0" y="-63" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YH5-fd-kE7">
+                                <rect key="frame" x="55" y="76" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="微价" image="price.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="weijiaButtonPressed:" destination="QvU-bs-0UK" eventType="touchUpInside" id="Y5G-DB-cc8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="微价" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wPl-L4-rpV">
+                                <rect key="frame" x="61" y="171" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VV1-pI-mmB">
+                                <rect key="frame" x="174" y="76" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="企业中心" image="ep.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterpriseCenterButtonPressed:" destination="QvU-bs-0UK" eventType="touchUpInside" id="Twt-zf-sCB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="企业中心" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sm3-qG-uLO">
+                                <rect key="frame" x="180" y="171" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="企业在线" id="12w-5K-dhQ"/>
+                    <connections>
+                        <outlet property="backImage" destination="daX-at-Bvt" id="yIy-CE-Cdn"/>
+                        <outlet property="enterpriseCenterButton" destination="VV1-pI-mmB" id="AkB-fx-nbZ"/>
+                        <outlet property="enterpriseCenterLabel" destination="sm3-qG-uLO" id="HZ4-B0-5ti"/>
+                        <outlet property="weijiaButton" destination="YH5-fd-kE7" id="JEI-hv-uAQ"/>
+                        <outlet property="weijiaLabel" destination="wPl-L4-rpV" id="u88-Ds-eQP"/>
+                        <segue destination="2" kind="push" identifier="login" id="1QV-Nu-Ygo"/>
+                        <segue destination="kQL-ZF-079" kind="push" identifier="pushenterprisecenter" id="0Yt-7G-zSN"/>
+                        <segue destination="OwW-9H-lNX" kind="push" identifier="pricelist" id="w47-oJ-0qs"/>
+                        <segue destination="VyS-wf-xug" kind="push" identifier="pickcompany" id="37c-a9-9Bg"/>
+                        <segue destination="ngA-pk-aTe" kind="push" identifier="totallist" id="1u0-u3-n6N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wa0-La-YE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="-1324"/>
+        </scene>
+        <!--Price List View Controller - 报价列表-->
+        <scene sceneID="bt5-jk-XPC">
+            <objects>
+                <tableViewController storyboardIdentifier="PriceList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OwW-9H-lNX" customClass="PriceListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dqw-qF-lhN">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PriceListTableIdentifier" id="YQK-v6-PH2">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OwW-9H-lNX" id="Hzz-Zp-RJ9"/>
+                            <outlet property="delegate" destination="OwW-9H-lNX" id="agI-Ze-wsA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="报价列表" id="lH7-7e-haE"/>
+                    <connections>
+                        <segue destination="dhZ-Si-fLH" kind="push" identifier="pgood" id="qIu-Y6-bE6"/>
+                        <segue destination="ngA-pk-aTe" kind="push" identifier="pricelisttototallist" id="2gM-dV-jcx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbG-0M-8c3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021" y="-1324"/>
+        </scene>
+        <!--Regist View Controller - 注册-->
+        <scene sceneID="GtK-np-J9t">
+            <objects>
+                <viewController storyboardIdentifier="RegisterView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p25-Cb-IaS" customClass="RegistViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zS0-Xc-Or7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="dAg-QZ-F6p">
+                                <rect key="frame" x="0.0" y="-46" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundClick:" destination="p25-Cb-IaS" eventType="touchUpInside" id="ofy-cE-hjP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" minimumFontSize="17" id="s3y-EF-FxZ">
+                                <rect key="frame" x="40" y="90" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="p25-Cb-IaS" eventType="editingDidEndOnExit" id="JYc-dN-hp3"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" id="Qp2-rf-J1g">
+                                <rect key="frame" x="40" y="130" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="p25-Cb-IaS" eventType="editingDidEndOnExit" id="xiQ-L9-fRN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请再次输入密码" minimumFontSize="17" id="AnW-TB-p1x">
+                                <rect key="frame" x="40" y="170" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="p25-Cb-IaS" eventType="editingDidEndOnExit" id="Ybo-Pk-Nvp"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入邮箱" minimumFontSize="17" id="7fb-Vw-zm4">
+                                <rect key="frame" x="40" y="210" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="p25-Cb-IaS" eventType="editingDidEndOnExit" id="6Z5-To-jZP"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fyL-NN-f2N">
+                                <rect key="frame" x="108" y="245" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="提交" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="p25-Cb-IaS" eventType="touchUpInside" id="UrC-Sq-k46"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="wj.png" id="l0V-Y3-5Q7">
+                                <rect key="frame" x="30" y="7" width="240" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="copyright.png" id="3E9-MG-kTa">
+                                <rect key="frame" x="80" y="315" width="160" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="cSY-gj-6NM"/>
+                    <connections>
+                        <outlet property="backButton" destination="dAg-QZ-F6p" id="0ey-o5-Yze"/>
+                        <outlet property="loginImage" destination="l0V-Y3-5Q7" id="HG4-eK-u1h"/>
+                        <outlet property="mail" destination="7fb-Vw-zm4" id="qYm-bt-PE6"/>
+                        <outlet property="passWord" destination="Qp2-rf-J1g" id="okg-Rc-i2A"/>
+                        <outlet property="registButton" destination="fyL-NN-f2N" id="8Ya-t1-cGe"/>
+                        <outlet property="secondPassWord" destination="AnW-TB-p1x" id="Ccc-IT-4li"/>
+                        <outlet property="userName" destination="s3y-EF-FxZ" id="9Dz-ea-HvO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3V-1n-VLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040" y="-669"/>
+        </scene>
+        <!--Enterprise View Controller - 企业信息-->
+        <scene sceneID="fTZ-qs-zMQ">
+            <objects>
+                <viewController storyboardIdentifier="EnterpriseView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fq8-nF-sj8" customClass="EnterpriseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l1W-uI-Nnp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-568h@2x.png" id="Aek-SF-kCU">
+                                <rect key="frame" x="0.0" y="-46" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4wl-bU-f5R">
+                                <rect key="frame" x="59" y="199" width="181" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o56-Hz-RLT">
+                                <rect key="frame" x="59" y="252" width="241" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C9j-ME-j21">
+                                <rect key="frame" x="187" y="60" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="查看微价" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="weijiaButtonPressed:" destination="fq8-nF-sj8" eventType="touchUpInside" id="b0v-K4-tJu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon.png" id="EeU-jg-aeY">
+                                <rect key="frame" x="20" y="20" width="133" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="enumber.png" id="19Z-bD-s8t">
+                                <rect key="frame" x="20" y="195" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ename.png" id="q0q-Qw-RWb">
+                                <rect key="frame" x="20" y="248" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="企业信息" id="Ar8-si-ccL"/>
+                    <connections>
+                        <outlet property="backImage" destination="Aek-SF-kCU" id="Poj-ax-CA6"/>
+                        <outlet property="enterpriseName" destination="o56-Hz-RLT" id="fqn-yg-s56"/>
+                        <outlet property="enterpriseNumber" destination="4wl-bU-f5R" id="scL-or-geV"/>
+                        <outlet property="nameImage" destination="q0q-Qw-RWb" id="RAG-JE-JVM"/>
+                        <outlet property="numberImage" destination="19Z-bD-s8t" id="wqO-O1-8ki"/>
+                        <outlet property="weijiaButton" destination="C9j-ME-j21" id="7sM-RJ-MQD"/>
+                        <segue destination="OwW-9H-lNX" kind="push" identifier="epricelist" id="Lcp-Z0-S1F"/>
+                        <segue destination="ngA-pk-aTe" kind="push" identifier="etotallist" id="QQR-rQ-nyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhD-Bl-7H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3529" y="-1324"/>
+        </scene>
+        <!--Welcome View Controller - 关注的企业-->
+        <scene sceneID="Ifa-Lh-JEu">
+            <objects>
+                <tableViewController storyboardIdentifier="WelcomeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kQL-ZF-079" customClass="WelcomeViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="2gI-a1-xI1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SimpleTableIdentifier" id="zPT-TO-YAM">
+                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kQL-ZF-079" id="XS1-Vh-NZg"/>
+                            <outlet property="delegate" destination="kQL-ZF-079" id="Jjn-rT-gJq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="关注的企业" id="j73-7v-Xfb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KzC-Nt-TwY">
+                            <color key="tintColor" red="0.2196078431372549" green="0.5725490196078431" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addAuthCodeButtonPressed:" destination="kQL-ZF-079" id="dBc-Je-yC0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="YCm-M0-V3a" kind="push" identifier="authcode" id="6mX-9Y-qbJ"/>
+                        <segue destination="fq8-nF-sj8" kind="push" identifier="enterpriseinfo" id="iLm-1z-fEr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbO-Wr-cZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040" y="-1324"/>
+        </scene>
+        <!--Navigation Controller - 首页-->
+        <scene sceneID="z8r-Vi-LIU">
+            <objects>
+                <navigationController storyboardIdentifier="FirstNavigation" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s6z-pm-2zB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="home_24.png" id="BQj-PT-Thc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C3W-3b-tXq">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QvU-bs-0UK" kind="relationship" relationship="rootViewController" id="hfe-bt-15N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLp-XV-rq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="-1324"/>
+        </scene>
+        <!--Total List View Controller - 报价汇总-->
+        <scene sceneID="HbO-H5-yef">
+            <objects>
+                <tableViewController storyboardIdentifier="" id="ngA-pk-aTe" customClass="TotalListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="toe-WZ-fEF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="G5m-Uf-iJh">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.21960784310000001" green="0.57254901960000004" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="ngA-pk-aTe" id="pz2-RK-oWE"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TotalListTableIdentifier" id="dnK-im-CzI">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ngA-pk-aTe" id="rBz-bX-Wzb"/>
+                            <outlet property="delegate" destination="ngA-pk-aTe" id="Oy2-XE-RWI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="报价汇总" id="KfD-py-nqw"/>
+                    <connections>
+                        <outlet property="search" destination="G5m-Uf-iJh" id="CJT-u9-ihe"/>
+                        <segue destination="dhZ-Si-fLH" kind="push" identifier="tgood" id="Eog-mr-w4y"/>
+                        <segue destination="A3Q-6V-AGE" kind="push" identifier="allgood" id="dNb-vN-axp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nc-Kw-OWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021" y="-1974"/>
+        </scene>
+        <!--All Good View Controller - 所有商品-->
+        <scene sceneID="JNb-CK-Xug">
+            <objects>
+                <tableViewController id="A3Q-6V-AGE" customClass="AllGoodViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Z4Z-UT-9c6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="Nsv-8o-aQV">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.21960784310000001" green="0.57254901960000004" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="A3Q-6V-AGE" id="LPW-Yi-1bX"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AllGoodTableIdentifier" id="aHF-Ot-V2L">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="A3Q-6V-AGE" id="zz4-P2-I7T"/>
+                            <outlet property="delegate" destination="A3Q-6V-AGE" id="GZ4-48-rY7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="所有商品" id="jX3-Ql-BXa"/>
+                    <connections>
+                        <outlet property="search" destination="Nsv-8o-aQV" id="tGm-uN-Qs1"/>
+                        <segue destination="dhZ-Si-fLH" kind="push" identifier="allgoodtogood" id="iBC-kx-lAF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTn-Lg-8by" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021" y="-2755"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-568h@2x.png" width="640" height="1136"/>
+        <image name="button.png" width="198" height="70"/>
+        <image name="copyright.png" width="160" height="27"/>
+        <image name="ename.png" width="30" height="30"/>
+        <image name="enumber.png" width="30" height="30"/>
+        <image name="ep.png" width="80" height="80"/>
+        <image name="gear_24.png" width="24" height="24"/>
+        <image name="home_24.png" width="24" height="24"/>
+        <image name="icon.png" width="57" height="57"/>
+        <image name="p.png" width="50" height="30"/>
+        <image name="price.png" width="80" height="80"/>
+        <image name="shunovaimage.png" width="209" height="196"/>
+        <image name="wj.png" width="154" height="50"/>
+    </resources>
+    <classes>
+        <class className="AllGoodViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AllGoodViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="search" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="AuthCodeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AuthCodeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundClick:"/>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="action" name="textFieldDoneEditing:"/>
+                <relationship kind="outlet" name="authcodeTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="sureButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="EditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundClick:"/>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="action" name="textFieldDoneEditing:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="enterpriseName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="enterpriseNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="numberImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="updateButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="EnterpriseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EnterpriseViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="mallButtonPressed:"/>
+                <relationship kind="action" name="serviceButtonPressed:"/>
+                <relationship kind="action" name="weijiaButtonPressed:"/>
+                <relationship kind="outlet" name="backImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="enterpriseName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="enterpriseNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mallButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="nameImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="numberImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="serviceButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="weijiaButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="enterpriseCenterButtonPressed:"/>
+                <relationship kind="action" name="weijiaButtonPressed:"/>
+                <relationship kind="outlet" name="backImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="enterpriseCenterButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="enterpriseCenterLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="weijiaButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="weijiaLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GoodImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GoodImageViewController.h"/>
+        </class>
+        <class className="GoodViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GoodViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelGoodName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelGoodPrice" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="GuideViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GuideViewController.h"/>
+        </class>
+        <class className="HistoryGraphViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryGraphViewController.h"/>
+        </class>
+        <class className="HistoryViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryViewController.h"/>
+        </class>
+        <class className="PersonInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PersonInfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="alertAction:"/>
+                <relationship kind="outlet" name="backImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="changePassWordButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="loginUserName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PickCompanyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickCompanyViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="selectButton:"/>
+                <relationship kind="outlet" name="selectButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="selectPicker" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="PriceListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PriceListViewController.h"/>
+        </class>
+        <class className="RegistViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegistViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundClick:"/>
+                <relationship kind="action" name="submitButtonPressed:"/>
+                <relationship kind="action" name="textFieldDoneEditing:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="loginImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passWord" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="registButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="secondPassWord" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="userName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SettingViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingViewController.h"/>
+        </class>
+        <class className="TotalListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TotalListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="search" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundClick:"/>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="action" name="registButtonPressed:"/>
+                <relationship kind="action" name="textFieldDoneEditing:"/>
+                <relationship kind="outlet" name="autoLogin" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="loginImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="registButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="remberPassword" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WelcomeViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addAuthCodeButtonPressed:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="iBC-kx-lAF"/>
+        <segue reference="QQR-rQ-nyH"/>
+        <segue reference="5E2-YU-XNc"/>
+        <segue reference="1QV-Nu-Ygo"/>
+        <segue reference="Lcp-Z0-S1F"/>
+    </inferredMetricsTieBreakers>
+</document>
